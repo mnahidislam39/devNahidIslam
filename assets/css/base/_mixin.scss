@@ -1,0 +1,5 @@
+@mixin font_calc_1rem_1vw {
+  font-size: calc(1rem + 1vw);
+  font-weight: 600;
+  text-transform: capitalize;
+}

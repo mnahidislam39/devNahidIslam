@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --primary-color: #99bac0;
+  --secondary-color: #23c071;
+  --text-primary: #23c071;
+  --text-secondary: #0a0a0a;
+  --bg-color: #303147;
+  --text-color: #fcfafb;
+  --dark-color: #0a0a0a;
+  --another-color: #cb9e4b;
+  --headline-1: 50px;
+  --headline-2: 40px;
+  --headline-3: 30px;
+  --linkSize: 20px;
+  --descSize: 18px;
+}
+body {
+  font-size: 14px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.2;
+  text-wrap: wrap;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  list-style-type: none;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+hr {
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+img {
+  width: 50%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+ul,
+ol,
+dl {
+  list-style: none;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-wrap: break-word;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.title {
+  margin-bottom: 60px;
+}
+
+.title {
+  h2 {
+    font-size: 36px;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+  }
+}
+.title {
+  p {
+    font-size: 16px;
+  }
+}
+.flexRow {
+  display: flex;
+  align-items: start !important;
+}
+p {
+  font-size: var(--descSize);
+}

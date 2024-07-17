@@ -1,0 +1,131 @@
+// grid_area start
+.container {
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+
+  .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    margin: -10px;
+  }
+}
+
+$grid_columns: 12;
+$grid_xxl_breakpoint: 1400px;
+$grid_xl_breakpoint: 1200px;
+$grid_lg_breakpoint: 992px;
+$grid_md_breakpoint: 576px;
+$grid_sm_breakpoint: 540px;
+
+@media (max-width: $grid_sm_breakpoint) {
+  @for $i from 1 through 12 {
+    .container {
+      width: 100% !important;
+    }
+
+    .col-#{$i} {
+      width: 100%;
+      padding: 0 10px;
+    }
+  }
+}
+
+@media (min-width: $grid_sm_breakpoint) {
+  @for $i from 1 through 12 {
+    .container {
+      width: 540px !important;
+    }
+
+    .col-sm-#{$i} {
+      width: (100/12) * $i * 1%;
+      padding: 0 5px;
+    }
+  }
+}
+
+@media (min-width: $grid_md_breakpoint) {
+  @for $i from 1 through 12 {
+    .container {
+      width: 720px !important;
+    }
+
+    .col-md-#{$i} {
+      width: (100/12) * $i * 1%;
+      padding: 0 5px;
+    }
+  }
+}
+
+@media (min-width: $grid_lg_breakpoint) {
+  @for $i from 1 through 12 {
+    .container {
+      width: 960px !important;
+    }
+
+    .col-lg-#{$i} {
+      width: (100/12) * $i * 1%;
+      padding: 0 5px;
+    }
+  }
+}
+
+@media (min-width: $grid_xl_breakpoint) {
+  @for $i from 1 through 12 {
+    .container {
+      width: 1140px !important;
+    }
+
+    .col-xl-#{$i} {
+      width: (100/12) * $i * 1%;
+      padding: 0 5px;
+    }
+  }
+}
+
+@media (min-width: $grid_xxl_breakpoint) {
+  @for $i from 1 through 12 {
+    .container {
+      width: 1320px !important;
+      padding: 0 10px;
+    }
+
+    .col-xxl-#{$i} {
+      width: (100/12) * $i * 1%;
+      padding: 0 5px;
+    }
+  }
+}
+
+/* responsive mixin */
+@mixin min-xxl {
+  @media (min-width: $grid_xxl_breakpoint) {
+    @content;
+  }
+}
+
+@mixin min-xl {
+  @media (min-width: $grid_xl_breakpoint) and (max-width: $grid_xxl_breakpoint) {
+    @content;
+  }
+}
+
+@mixin min-lg {
+  @media (min-width: $grid_lg_breakpoint) and (max-width: $grid_xl_breakpoint) {
+    @content;
+  }
+}
+
+@mixin min-md {
+  @media (min-width: $grid_md_breakpoint) and (max-width: $grid_lg_breakpoint) {
+    @content;
+  }
+}
+
+@mixin min-xs {
+  @media (max-width: $grid_lg_breakpoint) {
+    @content;
+  }
+}

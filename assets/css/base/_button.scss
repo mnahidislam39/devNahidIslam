@@ -1,0 +1,55 @@
+@mixin btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  height: 50px;
+  border-radius: 3px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 16px;
+  border: 0;
+  outline: 0;
+  padding: 5px 10px;
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+  background-color: var(--secondary-color);
+}
+// btn-primary
+.btn-primary {
+  @include btn;
+  &:hover {
+    background-color: var(--primary-color);
+  }
+}
+// btn-secondary
+.btn-secondary {
+  @include btn;
+  background-color: var(--primary-color);
+  &:hover {
+    background-color: var(--secondary-color);
+  }
+}
+.scrollTop {
+  opacity: 0;
+}
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.add-hire-btn {
+  opacity: 1;
+}
+#scrollToTopBtn:hover {
+  background-color: var(--primary-color);
+}

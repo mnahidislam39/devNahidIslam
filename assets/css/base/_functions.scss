@@ -1,0 +1,134 @@
+/*-------- text_align --------*/
+$text_align: left, center, right, justify;
+$text: Lowercase, uppercase, capitalize, none;
+
+@each $i in $text_align {
+  .text-#{$i} {
+    text-align: $i;
+  }
+}
+@each $i in $text {
+  .#{$i} {
+    text-transform: $i;
+  }
+}
+// display
+$display: block, inline-block, flex, inline-flex, grid, table;
+@each $i in $display {
+  .d-#{$i} {
+    display: $i;
+  }
+}
+
+// flex direction
+$flex_direction: row, row-reverse, column, column-reverse;
+@each $i in $flex_direction {
+  .#{$i} {
+    flex-direction: $i;
+  }
+}
+
+// flex_wrap
+$flex_wrapNowrap: wrap, nowrap;
+@each $i in $flex_wrapNowrap {
+  .flex-#{$i} {
+    flex-wrap: $i;
+  }
+}
+
+// align_content
+$align_content: start, end, center, space-between, space-around, space-evenly,
+  stretch;
+@each $i in $align_content {
+  .align-#{$i} {
+    align-content: $i;
+  }
+}
+
+// align items
+$align_items: start, end, center, baseline;
+@each $i in $align_items {
+  .items-#{$i} {
+    align-items: $i;
+  }
+}
+
+// justify_content
+$justify_content: start, end, center, space-between, space-around, space-evenly;
+@each $i in $justify_content {
+  .justify-#{$i} {
+    justify-content: $i;
+  }
+}
+
+// justify_items
+$justify_items: start, end, center, stretch;
+@each $i in $justify_items {
+  .justify-items-#{$i} {
+    justify-items: $i;
+  }
+}
+// flex_basis
+$flex_basis: 100;
+@for $i from 1 through $flex_basis {
+  .basis-#{$i} {
+    flex-basis: $i * 1%;
+  }
+}
+
+// padding left-top-right-bottom start
+@for $i from 1 through 400 {
+  .p-#{$i*1} {
+    padding: $i * 1px;
+  }
+  .pl-#{$i*1} {
+    padding-left: $i * 1px;
+  }
+
+  .pt-#{$i*1} {
+    padding-top: $i * 1px;
+  }
+
+  .pr-#{$i*1} {
+    padding-right: $i * 1px;
+  }
+
+  .pb-#{$i*1} {
+    padding-bottom: $i * 1px;
+  }
+
+  //   margin left-top-right-bottom start
+  .m-#{$i*1} {
+    margin: $i * 1px;
+  }
+  .ml-#{$i*1} {
+    margin-left: $i * 1px;
+  }
+
+  .mt-#{$i*1} {
+    margin-top: $i * 1px;
+  }
+
+  .mr-#{$i*1} {
+    margin-right: $i * 1px;
+  }
+
+  .mb-#{$i*1} {
+    margin-bottom: $i * 1px;
+  }
+}
+$WH: 100;
+@for $i from 1 through $WH {
+  .w-#{$i*2} {
+    width: $i * 2%;
+  }
+  .h-#{$i*2} {
+    height: $i * 2%;
+  }
+}
+$gap: 100;
+@for $i from 1 through $gap {
+  .gap-#{$i*2} {
+    gap: $i * 2px;
+  }
+}

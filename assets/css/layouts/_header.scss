@@ -1,0 +1,47 @@
+.main_area {
+  .main_contents {
+    .header_area {
+      .header {
+        background-color: var(--bg-color);
+        .logo {
+          a {
+            color: var(--primary-color);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              color: var(--secondary-color);
+            }
+          }
+        }
+
+        .nav {
+          .ul {
+            .nav-item {
+              flex-basis: 15%;
+              text-transform: capitalize;
+              .nav-link {
+                color: var(--text-color);
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                  color: var(--secondary-color);
+                }
+              }
+            }
+            .active {
+              .nav-link {
+                color: var(--secondary-color);
+              }
+            }
+          }
+        }
+
+        .hire_btn {
+        }
+      }
+    }
+  }
+}
+
+//
