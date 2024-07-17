@@ -1,4 +1,4 @@
-.textPrimmary {
+.textPrimary {
   color: var(--text-primary);
   text-transform: capitalize;
 }
@@ -13,4 +13,7 @@
 }
 .linkSize {
   font-size: var(--linkSize);
+}
+.textJustify {
+  text-align: var(--textJustify);
 }
