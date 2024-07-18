@@ -1,0 +1,25 @@
+.about_me {
+  .about {
+    .about_img {
+      overflow: hidden;
+      height: 550px;
+      img {
+        width: 100%;
+      }
+    }
+    .about_content {
+      .ul {
+        li {
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 10px;
+          span {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
